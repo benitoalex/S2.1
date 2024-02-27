@@ -1,6 +1,6 @@
-const edat = 16;
+const num1 = 20;
+const num2 = 17;
 
-const potConduir = edat >= 18 ? "Pot conduir" : "No pot conduir";
+const valorGran = num1 > num2 ? "num 1 es mes gran" : "num2 es mes gran";
 
-
-console.log(potConduir);
+console.log(valorGran);
