@@ -1,6 +1,6 @@
-const add = (a, b) => a + b;
+const randomNumber= () => Math.floor(Math.random() * 101);
 
-var result = add(4,6);
+const result = randomNumber();
 
 console.log(result);
 
