@@ -1,6 +1,11 @@
-const randomNumber= () => Math.floor(Math.random() * 101);
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    greet = () => {
+        console.log(`Hola, ${this.name}.`);
+      };
+}
 
-const result = randomNumber();
-
-console.log(result);
-
+const person = new Person("Juan");
+person.greet();
