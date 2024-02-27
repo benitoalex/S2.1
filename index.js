@@ -1,6 +1,15 @@
-const num1 = 20;
-const num2 = 17;
+const num = -10;
 
-const valorGran = num1 > num2 ? "num 1 es mes gran" : "num2 es mes gran";
+const valor = num > 0 ? "Numero Positivo" : (num < 0 ? "Numero negativo" : "Numero zero");
 
-console.log(valorGran);
+console.log(valor);
+
+const trobarMaxim = (a,b,c) => {
+    
+
+    const valor1 = (a > b ? (a > c? a :c) : (b > c ? b :c));
+    return valor1;
+}
+
+const maximo = trobarMaxim(15,8,4);
+console.log(maximo);
