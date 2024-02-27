@@ -1,3 +1,6 @@
-setTimeout(() => {
-    console.log("Enviado a los 3 segundos");
-}, "3000");
+const edat = 16;
+
+const potConduir = edat >= 18 ? "Pot conduir" : "No pot conduir";
+
+
+console.log(potConduir);
