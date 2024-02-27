@@ -1,10 +1,3 @@
-const printNumbers = (numbers) => {
-    for (let i = 0; i < numbers.length; i++) {
-      (() => {
-        console.log(numbers[i]);
-      })();
-    }
-  };
-  
-  const numbers = [1, 2, 3, 4, 5];
-  printNumbers(numbers);
+setTimeout(() => {
+    console.log("Enviado a los 3 segundos");
+}, "3000");
