@@ -1,11 +1,10 @@
-class Person {
-    constructor(name) {
-        this.name = name;
+const printNumbers = (numbers) => {
+    for (let i = 0; i < numbers.length; i++) {
+      (() => {
+        console.log(numbers[i]);
+      })();
     }
-    greet = () => {
-        console.log(`Hola, ${this.name}.`);
-      };
-}
-
-const person = new Person("Juan");
-person.greet();
+  };
+  
+  const numbers = [1, 2, 3, 4, 5];
+  printNumbers(numbers);
