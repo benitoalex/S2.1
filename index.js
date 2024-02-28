@@ -1,9 +1,10 @@
-function parOImpar(array)  {
-    for (let i = 0; i < array.length; i++) {
-        const tipo = (array[i] % 2 === 0) ? 'parell' : 'imparell';
-        console.log(array[i] + ' es ' + tipo);
-    }
+const processar = (numero, callback) => {
+    callback(numero);
 }
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-parOImpar(numeros);
+const ejemplo = (num) => {
+    console.log("El numero recibido es:", num);
+
+}
+
+processar(5, ejemplo);
