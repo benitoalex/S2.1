@@ -1,11 +1,13 @@
-const esperarISaludar = (nombre, callback) => {
-    setTimeout(() => {
-        callback(nombre);
-    }, 2000);
+const processarElements = (array, callback) => {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i]);
+    }
 }
 
-const ejemplo = (saludo) => {
-    console.log("Hola " , saludo);
+const ejemplo = (elemento) => {
+    console.log("Elemento processado", elemento);
 }
 
-esperarISaludar ("Alex", ejemplo);
+const array1 = [1, 2, 3, 4, 5];
+
+processarElements(array1, ejemplo);
