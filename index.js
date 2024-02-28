@@ -1,5 +1,5 @@
-const array = [1, 2, 3, 4];
+const array = [1, 10, 8, 11];
 
-const array2 = array.filter(numero => numero % 2 === 0);
+const mayor = array.find(numero => numero > 10);
 
-console.log(array2);
+console.log(mayor);
