@@ -1,7 +1,9 @@
-let array = [1, 2, 3, 4, 5, 6];
+const ex5 = (arg1, arg2, arg3) =>{
+    console.log("Argumento 1", arg1);
+    console.log("Argumento 2", arg2);
+    console.log("Argumento 3", arg3);
+}
 
-let [var1, var2, ...rest] = array;
+const array = [1, 2, 3];
 
-console.log("Primera variable", var1);
-console.log("Segunda variable", var2);
-console.log("Resto de variables", rest);
+ex5(...array);
