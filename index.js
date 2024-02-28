@@ -1,6 +1,6 @@
-let noms = ['Anna', 'Bernat', 'Clara'];
+const promesa = new Promise ((resolve,reject) =>{
+    setTimeout (() => {
+        console.log("Hola mundo");
+    }, 2000);
+});
 
-for (const element of noms) {
-    console.log(element, noms.indexOf(element));
-
-}
