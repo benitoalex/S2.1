@@ -1,5 +1,5 @@
-let noms = ['Anna', 'Bernat', 'Clara'];
+let numeros = [1, 2, 3, 4, 5, 6];
 
-for(const element of noms){
-    console.log(element);
-}
+let numeros2 = numeros.filter (element => element % 2 === 0);
+
+console.log(numeros2);
