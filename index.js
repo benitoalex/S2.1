@@ -1,5 +1,5 @@
-let numeros = [1, 2, 3, 4, 5, 6];
+let obj = { nom: 'Ona', edat: 25, ciutat: 'Barcelona' }; 
 
-let numeros2 = numeros.filter (element => element % 2 === 0);
-
-console.log(numeros2);
+for (const propiedad in obj) {
+    console.log(`${propiedad}: ${obj[propiedad]}`);
+}
