@@ -1,15 +1,9 @@
-const num = -10;
-
-const valor = num > 0 ? "Numero Positivo" : (num < 0 ? "Numero negativo" : "Numero zero");
-
-console.log(valor);
-
-const trobarMaxim = (a,b,c) => {
-    
-
-    const valor1 = (a > b ? (a > c? a :c) : (b > c ? b :c));
-    return valor1;
+function parOImpar(array)  {
+    for (let i = 0; i < array.length; i++) {
+        const tipo = (array[i] % 2 === 0) ? 'parell' : 'imparell';
+        console.log(array[i] + ' es ' + tipo);
+    }
 }
 
-const maximo = trobarMaxim(15,8,4);
-console.log(maximo);
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+parOImpar(numeros);
