@@ -1,9 +1,6 @@
-const processarCadena = (cadena, callback) => {
-    callback(cadena.toUpperCase());
-}
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
 
-const ejemplo = (mayusculas) => {
-    console.log("Esta es la cadena en mayusculas", mayusculas);
-}
+const arrayConcatenada = [...array1, ...array2];
 
-processarCadena("hola que tal", ejemplo);
+console.log("Array concatenada:", arrayConcatenada);
