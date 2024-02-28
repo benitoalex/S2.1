@@ -1,9 +1,7 @@
-const objecte1 = {nom: "Alex", edat: 32};
+let array = [1, 2, 3, 4, 5, 6];
 
-const objecte2 =  {...objecte1};
+let [var1, var2, ...rest] = array;
 
-objecte2.edat = 30;
-
-
-console.log("objecte1", objecte1);
-console.log("objecte2", objecte2);
+console.log("Primera variable", var1);
+console.log("Segunda variable", var2);
+console.log("Resto de variables", rest);
