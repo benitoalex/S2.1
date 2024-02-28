@@ -1,6 +1,7 @@
-const ob1 = {nom: "Alex", edad: "32"};
-const obj2 = {altura: "182cm", peso :"80kg"};
+const array = [1, 2, 3, 4];
 
-const info = {...ob1, ...obj2};
+const array2 = array.map(function (x){
+    return Math.pow(x,2);
+});
 
-console.log(info);
+console.log(array2);
