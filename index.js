@@ -1,6 +1,10 @@
-const array1 = [1, 2, 3];
-const array2 = [4, 5, 6];
+const suma = (...numeros) => {
+    let sumaTotal = 0;
+    for (let numero of numeros) {
+        sumaTotal += numero;
+    }
 
-const arrayConcatenada = [...array1, ...array2];
+    return sumaTotal;
+}
 
-console.log("Array concatenada:", arrayConcatenada);
+console.log(suma(1, 2, 3));
