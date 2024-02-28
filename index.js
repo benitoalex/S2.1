@@ -1,6 +1,9 @@
 const promesa = new Promise ((resolve,reject) =>{
     setTimeout (() => {
-        console.log("Hola mundo");
+        resolve("Hola mundo");
     }, 2000);
 });
 
+promesa.then((resultado)=> {
+    console.log(resultado);
+})
