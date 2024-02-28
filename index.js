@@ -1,8 +1,5 @@
-const array = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+const porEncima = (numero) => numero > 10;
 
-const result = array.filter(numero => numero >= 10)
-    .map(numero => numero * 2)
-    .reduce((acumulador, numero) => acumulador + numero, 0);
+const array = [11, 12, 13, 14];
 
-
-console.log(result);
+console.log(array.every(porEncima));
