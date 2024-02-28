@@ -1,5 +1,3 @@
-const porEncima = (numero) => numero > 10;
+let noms = ["Anna", "Bernat", "Clara"];
 
-const array = [11, 12, 13, 14];
-
-console.log(array.every(porEncima));
+noms.forEach((element) => console.log(element));
