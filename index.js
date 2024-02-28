@@ -1,9 +1,6 @@
-const ex5 = (arg1, arg2, arg3) =>{
-    console.log("Argumento 1", arg1);
-    console.log("Argumento 2", arg2);
-    console.log("Argumento 3", arg3);
-}
+const ob1 = {nom: "Alex", edad: "32"};
+const obj2 = {altura: "182cm", peso :"80kg"};
 
-const array = [1, 2, 3];
+const info = {...ob1, ...obj2};
 
-ex5(...array);
+console.log(info);
