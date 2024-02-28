@@ -1,13 +1,9 @@
-const processarElements = (array, callback) => {
-    for (let i = 0; i < array.length; i++) {
-        callback(array[i]);
-    }
+const processarCadena = (cadena, callback) => {
+    callback(cadena.toUpperCase());
 }
 
-const ejemplo = (elemento) => {
-    console.log("Elemento processado", elemento);
+const ejemplo = (mayusculas) => {
+    console.log("Esta es la cadena en mayusculas", mayusculas);
 }
 
-const array1 = [1, 2, 3, 4, 5];
-
-processarElements(array1, ejemplo);
+processarCadena("hola que tal", ejemplo);
