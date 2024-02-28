@@ -1,3 +1,5 @@
-let noms = ["Anna", "Bernat", "Clara"];
+let noms = ['Anna', 'Bernat', 'Clara'];
 
-noms.forEach((element) => console.log(element));
+for(const element of noms){
+    console.log(element);
+}
