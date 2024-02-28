@@ -1,9 +1,11 @@
-const calculadora = (num1, num2, callback) => {
-    callback(num1 + num2);
+const esperarISaludar = (nombre, callback) => {
+    setTimeout(() => {
+        callback(nombre);
+    }, 2000);
 }
 
-const ejemplo = (suma) => {
-    console.log("La suma de los 2 numeros es:", suma );
+const ejemplo = (saludo) => {
+    console.log("Hola " , saludo);
 }
 
-calculadora(3, 2, ejemplo);
+esperarISaludar ("Alex", ejemplo);
