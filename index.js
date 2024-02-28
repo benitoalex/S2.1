@@ -1,5 +1,6 @@
-const array = [1, 10, 8, 11];
+const array = [13, 7, 8, 21];
 
-const mayor = array.find(numero => numero > 10);
+const suma = array.reduce((acumulador, numero) => acumulador + numero, 0);
 
-console.log(mayor);
+
+console.log("la suma total de los numeros es:", suma);
