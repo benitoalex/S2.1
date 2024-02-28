@@ -1,10 +1,9 @@
-const suma = (...numeros) => {
-    let sumaTotal = 0;
-    for (let numero of numeros) {
-        sumaTotal += numero;
-    }
+const objecte1 = {nom: "Alex", edat: 32};
 
-    return sumaTotal;
-}
+const objecte2 =  {...objecte1};
 
-console.log(suma(1, 2, 3));
+objecte2.edat = 30;
+
+
+console.log("objecte1", objecte1);
+console.log("objecte2", objecte2);
