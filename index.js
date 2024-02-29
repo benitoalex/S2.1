@@ -12,5 +12,6 @@ async function imprimirMensaje() {
         console.error("Hubo un error:", error);
     }
 }
+
 imprimirMensaje();
 
