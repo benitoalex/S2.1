@@ -1,19 +1,16 @@
-const promesa = (input) => {
-    return new Promise((resolve, reject) => {
+async function imprimirMensaje() {
+    const promesa = new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (input === "Hola") {
-                resolve("La promesa se ha resuelto");
-            } else {
-                reject("La promesa ha sido rechazada")
-            }
+            resolve("Hola mundo");
         }, 2000);
     });
-}
 
-promesa("Hola")
-    .then((resultado) => {
+    try {
+        const resultado = await promesa;
         console.log(resultado);
-    })
-    .catch((error) =>{
-        console.log(error);
-    })
+    } catch (error) {
+        console.error("Hubo un error:", error);
+    }
+}
+imprimirMensaje();
+
