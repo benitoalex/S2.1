@@ -1,17 +1,15 @@
-async function imprimirMensaje() {
-    const promesa = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("Hola mundo");
-        }, 2000);
-    });
+const promesa = new Promise ((resolve,reject) =>{
+    setTimeout (() => {
+        console.log("Hola mundo");
+    }, 2000);
+});
 
-    try {
-        const resultado = await promesa;
-        console.log(resultado);
-    } catch (error) {
-        console.error("Hubo un error:", error);
-    }
-}
+const promesa2 = new Promise ((resolve,reject) =>{
+    setTimeout (() => {
+        console.log("Adios mundo");
+    }, 3000);
+});
 
-imprimirMensaje();
-
+Promise.all([promesa, promesa2]).then((values)=>{
+    console.log(values);
+})
